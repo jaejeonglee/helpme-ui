@@ -1,0 +1,16 @@
+name: test
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      # Playwright is optional for users; CI installs it outside package.json so the skill stays at 0 deps.
+      - run: npm install --no-save playwright@1.61.1
+      - run: npx playwright install --with-deps --only-shell chromium
+      - run: npm test
+        env:
+          HELPME_PLAYWRIGHT: ${{ github.workspace }}/node_modules/playwright
