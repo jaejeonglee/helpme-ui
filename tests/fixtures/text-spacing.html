@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="ko">
+<meta charset="utf-8">
+<title>text-spacing</title>
+<meta name="viewport" content="initial-scale=1, width=device-width">
+<style>body{margin:0;padding:16px;font:16px/1.5 sans-serif;color:#222;background:#fff;word-break:keep-all;overflow-wrap:break-word}button{font:inherit;padding:0 16px}</style>
+<div id="box" style="height:24px;overflow:hidden;line-height:24px">가나다라마바사 아자차카타파하</div>
+<script>/* fit the box to the text + 4 px, whatever the font, so only the stress can overflow it */
+const b = document.getElementById("box"), r = document.createRange();
+r.selectNodeContents(b);
+b.style.width = Math.ceil(r.getBoundingClientRect().width) + 4 + "px";</script>
+</html>
