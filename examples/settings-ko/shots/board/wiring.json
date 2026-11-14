@@ -1,0 +1,34 @@
+{
+  "board@desktop~split": [
+    "aria:Before/after split for settings@desktop.png",
+    "aria:Before/after split for settings@phone.png",
+    "aria:Viewport",
+    "button:Copy verdict",
+    "button:Desktop",
+    "button:Phone",
+    "field:line",
+    "field:notes",
+    "field:v-settings@desktop",
+    "field:v-settings@phone",
+    "heading:Verdict",
+    "heading:must 17 → 0 · should 37 → 0",
+    "heading:must 18 → 0 · should 41 → 0",
+    "heading:워크스페이스 설정 · before / after"
+  ],
+  "board@phone~split": [
+    "aria:Before/after split for settings@desktop.png",
+    "aria:Before/after split for settings@phone.png",
+    "aria:Viewport",
+    "button:Copy verdict",
+    "button:Desktop",
+    "button:Phone",
+    "field:line",
+    "field:notes",
+    "field:v-settings@desktop",
+    "field:v-settings@phone",
+    "heading:Verdict",
+    "heading:must 17 → 0 · should 37 → 0",
+    "heading:must 18 → 0 · should 41 → 0",
+    "heading:워크스페이스 설정 · before / after"
+  ]
+}

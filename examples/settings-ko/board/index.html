@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><title>워크스페이스 설정 · before / after</title>
+<meta name="viewport" content="initial-scale=1, width=device-width">
+<style>
+:root{--ink:#17181c;--muted:#5b5e66;--line:#d5d7dd;--paper:#ffffff;--wash:#f3f4f6;--accent:#1f5eff;color-scheme:light}
+*{box-sizing:border-box}
+body{margin:0;background:var(--wash);color:var(--ink);font:16px/1.5 system-ui,-apple-system,"Apple SD Gothic Neo","Pretendard",sans-serif;word-break:keep-all;overflow-wrap:break-word}
+.top{position:sticky;top:0;z-index:2;display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center;justify-content:space-between;padding:12px 24px;background:var(--paper);border-bottom:1px solid var(--line)}
+.top h1{margin:0;font-size:20px;line-height:1.4}
+.top p{margin:0;color:var(--muted);font-size:14px}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;padding:4px;gap:4px;background:var(--wash)}
+.seg button{font:inherit;font-size:14px;min-height:44px;min-width:88px;padding:0 16px;border:0;border-radius:4px;background:transparent;color:var(--ink);cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--paper);box-shadow:0 1px 2px rgba(0,0,0,.12);font-weight:600}
+:is(button,input,textarea):focus-visible{outline-offset:2px;outline:2px solid var(--accent)}
+main{display:grid;gap:24px;padding:24px;grid-template-columns:repeat(auto-fit,minmax(min(100%,560px),1fr));max-width:1440px;margin:0 auto}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.card header{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center}
+.card h2{margin:0;font-size:16px;line-height:1.5}
+.tag{flex:none;display:inline-grid;place-items:center;min-width:32px;height:32px;padding:0 8px;border-radius:8px;background:var(--ink);color:var(--paper);font-size:14px}
+.bet{margin:0;font-size:14px;color:var(--ink)}
+.bet span{color:var(--muted);margin-right:4px}
+body[data-vp="phone"] .v-desktop,body[data-vp="desktop"] .v-phone{display:none}
+.view{min-width:0}
+.view img{display:block;max-width:100%;height:auto;border:1px solid var(--line);border-radius:8px}
+.frame{position:relative;width:100%;aspect-ratio:var(--w)/var(--h);overflow:hidden;border:1px solid var(--line);border-radius:8px;container-type:inline-size}
+.frame iframe{position:absolute;top:0;left:0;border:0;width:calc(var(--w)*1px);height:calc(var(--h)*1px);transform-origin:0 0;transform:scale(calc(100cqw / (var(--w) * 1px)))}
+.v-phone .frame,.frame.v-phone{max-width:360px}
+.pair{display:flex;flex-direction:column;gap:12px}
+.card.v-phone .pair{max-width:360px}
+.stack{display:grid;position:relative;--split:50%;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--paper)}
+.layer{grid-area:1/1;overflow:hidden;background:var(--wash)}
+.layer img{display:block;width:100%;max-width:none;height:auto;border:0;border-radius:0}
+.layer.before{clip-path:inset(0 calc(100% - var(--split)) 0 0)}
+.seam{position:absolute;top:0;bottom:0;left:var(--split);width:2px;margin-left:-1px;background:var(--accent)}
+.slide{display:flex;align-items:center;gap:12px;font-size:14px;color:var(--muted)}
+.slide input{flex:1;min-height:44px;accent-color:var(--accent)}
+.pick{display:flex;gap:16px;border:0;margin:0;padding:0}
+.pick legend{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.pick label{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 12px;border:1px solid var(--line);border-radius:8px;cursor:pointer}
+.pick input{width:20px;height:20px;margin:0;accent-color:var(--accent)}
+.verdict{max-width:1440px;margin:0 auto;padding:0 24px 32px}
+.verdict section{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:16px;display:grid;gap:12px}
+.verdict h2{margin:0;font-size:16px}
+.verdict label{font-size:14px;color:var(--muted)}
+.verdict textarea{width:100%;font:16px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace;padding:12px;border:1px solid var(--line);border-radius:8px;color:var(--ink);background:var(--paper);resize:vertical}
+.verdict .row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.verdict button{font:inherit;min-height:44px;padding:0 20px;border:0;border-radius:8px;background:var(--accent);color:#fff;cursor:pointer}
+.verdict output{font-size:14px;color:var(--muted)}
+.unmatched{color:var(--muted);font-size:14px;margin:0}
+</style>
+<body data-vp="desktop">
+<div class="top"><div><h1>워크스페이스 설정 · before / after</h1><p>Drag a slider to compare before and after. Pick keep or drop, then copy the verdict line back to the agent.</p></div>
+<div class="seg" role="group" aria-label="Viewport"><button type="button" data-vp="phone" aria-pressed="false">Phone</button><button type="button" data-vp="desktop" aria-pressed="true">Desktop</button></div></div>
+<main>
+<article class="card v-desktop" data-id="settings@desktop">
+<header><b class="tag">settings@desktop</b><h2>must 17 → 0 · should 37 → 0</h2></header>
+
+<div class="view"><div class="pair"><div class="stack"><div class="layer"><img src="after/settings%40desktop.png" alt="after: settings@desktop.png" style="width:100.000%"></div><div class="layer before"><img src="before/settings%40desktop.png" alt="before: settings@desktop.png" style="width:100.000%"></div><span class="seam" aria-hidden="true"></span></div>
+<label class="slide"><span>Before</span><input type="range" min="0" max="100" value="50" aria-label="Before/after split for settings@desktop.png"><span>After</span></label></div></div>
+<fieldset class="pick"><legend>Verdict for settings@desktop</legend>
+<label><input type="radio" name="v-settings@desktop" value="keep"> Keep</label><label><input type="radio" name="v-settings@desktop" value="drop"> Drop</label></fieldset>
+</article>
+<article class="card v-phone" data-id="settings@phone">
+<header><b class="tag">settings@phone</b><h2>must 18 → 0 · should 41 → 0</h2></header>
+
+<div class="view"><div class="pair"><div class="stack"><div class="layer"><img src="after/settings%40phone.png" alt="after: settings@phone.png" style="width:100.000%"></div><div class="layer before"><img src="before/settings%40phone.png" alt="before: settings@phone.png" style="width:222.500%"></div><span class="seam" aria-hidden="true"></span></div>
+<label class="slide"><span>Before</span><input type="range" min="0" max="100" value="50" aria-label="Before/after split for settings@phone.png"><span>After</span></label></div></div>
+<fieldset class="pick"><legend>Verdict for settings@phone</legend>
+<label><input type="radio" name="v-settings@phone" value="keep"> Keep</label><label><input type="radio" name="v-settings@phone" value="drop"> Drop</label></fieldset>
+</article>
+</main>
+<div class="verdict"><section>
+<h2>Verdict</h2>
+
+<label for="notes">Notes</label><textarea id="notes" rows="2" placeholder="What to change next"></textarea>
+<label for="line">Line to paste back</label><textarea id="line" rows="4" readonly></textarea>
+<div class="row"><button type="button" id="copy">Copy verdict</button><output id="copied" aria-live="polite"></output></div>
+</section></div>
+<script>
+const BOARD = "워크스페이스 설정 · before / after";
+const verdictLine = function verdictLine({ board, keep = [], drop = [], notes = '' }) {
+  const q = (s) => '"' + String(s).replace(/\s+/g, ' ').trim().replace(/\\/g, '\\\\').replace(/"/g, '\\"') + '"';
+  return `helpme-verdict board=${q(board)} keep=${keep.join(',')} drop=${drop.join(',')} notes=${q(notes)}`;
+};
+const $ = (s, el = document) => [...el.querySelectorAll(s)];
+function setVp(vp) {
+  document.body.dataset.vp = vp;
+  for (const btn of $('.seg button')) btn.setAttribute('aria-pressed', btn.dataset.vp === vp ? 'true' : 'false');
+}
+$('.seg button').forEach((b) => b.addEventListener('click', () => setVp(b.dataset.vp)));
+setVp(matchMedia('(max-width: 599px)').matches ? 'phone' : 'desktop');
+$('.stack').forEach((st) => {
+  const input = st.parentElement.querySelector('input[type=range]');
+  const apply = () => st.style.setProperty('--split', input.value + '%');
+  input.addEventListener('input', apply); apply();
+});
+function update() {
+  const keep = [], drop = [];
+  $('.card').forEach((c) => { const v = c.querySelector('.pick input:checked'); if (v) (v.value === 'keep' ? keep : drop).push(c.dataset.id); });
+  document.getElementById('line').value = verdictLine({ board: BOARD, keep, drop, notes: document.getElementById('notes').value });
+}
+document.addEventListener('input', update); document.addEventListener('change', update); update();
+document.getElementById('copy').addEventListener('click', async () => {
+  const line = document.getElementById('line'), out = document.getElementById('copied');
+  try { await navigator.clipboard.writeText(line.value); out.textContent = 'Copied.'; }
+  catch { line.focus(); line.select(); out.textContent = 'Select the line and copy it.'; }
+});
+</script>
+</body></html>

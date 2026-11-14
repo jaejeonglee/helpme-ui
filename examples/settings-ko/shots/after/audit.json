@@ -1,0 +1,55 @@
+{
+  "tool": "helpme-ui capture",
+  "version": "0.1.0",
+  "created": "2026-11-14T00:35:49.362Z",
+  "failOn": "must",
+  "stress": null,
+  "reducedMotion": false,
+  "total": {
+    "must": 0,
+    "should": 0,
+    "polish": 0,
+    "info": 0,
+    "waived": 0
+  },
+  "shots": [
+    {
+      "key": "settings@phone",
+      "file": "settings@phone.png",
+      "url": "http://127.0.0.1:57667/after.html",
+      "viewport": {
+        "name": "phone",
+        "width": 360,
+        "height": 800
+      },
+      "scheme": "light",
+      "counts": {
+        "must": 0,
+        "should": 0,
+        "polish": 0,
+        "info": 0,
+        "waived": 0
+      },
+      "findings": []
+    },
+    {
+      "key": "settings@desktop",
+      "file": "settings@desktop.png",
+      "url": "http://127.0.0.1:57667/after.html",
+      "viewport": {
+        "name": "desktop",
+        "width": 1280,
+        "height": 800
+      },
+      "scheme": "light",
+      "counts": {
+        "must": 0,
+        "should": 0,
+        "polish": 0,
+        "info": 0,
+        "waived": 0
+      },
+      "findings": []
+    }
+  ]
+}

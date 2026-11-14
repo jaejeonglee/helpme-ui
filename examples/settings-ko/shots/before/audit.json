@@ -1,0 +1,1166 @@
+{
+  "tool": "helpme-ui capture",
+  "version": "0.1.0",
+  "created": "2026-11-14T00:35:45.199Z",
+  "failOn": "must",
+  "stress": null,
+  "reducedMotion": false,
+  "total": {
+    "must": 35,
+    "should": 78,
+    "polish": 30,
+    "info": 0,
+    "waived": 0
+  },
+  "shots": [
+    {
+      "key": "settings@phone",
+      "file": "settings@phone.png",
+      "url": "http://127.0.0.1:57664/before.html",
+      "viewport": {
+        "name": "phone",
+        "width": 360,
+        "height": 800
+      },
+      "scheme": "light",
+      "counts": {
+        "must": 18,
+        "should": 41,
+        "polish": 15,
+        "info": 0,
+        "waived": 0
+      },
+      "findings": [
+        {
+          "tier": "must",
+          "id": "OVERFLOW-X",
+          "selector": "form > div.box > table",
+          "measured": "page 801 px wide at 360 px; ends at x=801",
+          "target": "≤ 361 px"
+        },
+        {
+          "tier": "must",
+          "id": "CONTRAST-TEXT",
+          "selector": "main > p.hint",
+          "measured": "2.73:1 (#999999 on #fafafa, 13 px)",
+          "target": "≥ 4.5:1",
+          "text": "변경 사항은 저장 버튼을 눌러야 반영됩니다. 팀원 모두에게 같은 설정이…"
+        },
+        {
+          "tier": "must",
+          "id": "CONTRAST-TEXT",
+          "selector": "form > div.box > p.hint",
+          "measured": "2.85:1 (#999999 on #ffffff, 13 px)",
+          "target": "≥ 4.5:1",
+          "text": "이메일은 결제 영수증과 보안 알림을 받는 주소입니다. 바꾸면 새 주소로…"
+        },
+        {
+          "tier": "must",
+          "id": "CONTRAST-TEXT",
+          "selector": "form > div.box > p.hint",
+          "measured": "2.85:1 (#999999 on #ffffff, 13 px)",
+          "target": "≥ 4.5:1",
+          "text": "알림을 받을 채널을 골라요."
+        },
+        {
+          "tier": "must",
+          "id": "CONTRAST-TEXT",
+          "selector": "thead > tr > th",
+          "measured": "2.85:1 (#999999 on #ffffff, 14 px)",
+          "target": "≥ 4.5:1",
+          "text": "기기"
+        },
+        {
+          "tier": "must",
+          "id": "CONTRAST-TEXT",
+          "selector": "thead > tr > th",
+          "measured": "2.85:1 (#999999 on #ffffff, 14 px)",
+          "target": "≥ 4.5:1",
+          "text": "위치"
+        },
+        {
+          "tier": "must",
+          "id": "CONTRAST-TEXT",
+          "selector": "thead > tr > th",
+          "measured": "2.85:1 (#999999 on #ffffff, 14 px)",
+          "target": "≥ 4.5:1",
+          "text": "마지막 접속"
+        },
+        {
+          "tier": "must",
+          "id": "CONTRAST-TEXT",
+          "selector": "thead > tr > th",
+          "measured": "2.85:1 (#999999 on #ffffff, 14 px)",
+          "target": "≥ 4.5:1",
+          "text": "IP"
+        },
+        {
+          "tier": "must",
+          "id": "CONTRAST-TEXT",
+          "selector": "thead > tr > th",
+          "measured": "2.85:1 (#999999 on #ffffff, 14 px)",
+          "target": "≥ 4.5:1",
+          "text": "상태"
+        },
+        {
+          "tier": "must",
+          "id": "CONTRAST-TEXT",
+          "selector": "form > div.box > p.hint",
+          "measured": "2.85:1 (#999999 on #ffffff, 13 px)",
+          "target": "≥ 4.5:1",
+          "text": "모르는 기기가 있다면 바로 연결을 해제하십시오."
+        },
+        {
+          "tier": "must",
+          "id": "CONTRAST-TEXT",
+          "selector": "main > form > button.save",
+          "measured": "3.73:1 (#ffffff on #3d7eff, 14 px)",
+          "target": "≥ 4.5:1",
+          "text": "변경 사항 저장"
+        },
+        {
+          "tier": "must",
+          "id": "CONTRAST-TEXT",
+          "selector": "main > div.box > button.danger",
+          "measured": "3.91:1 (#e5484d on #ffffff, 13.33 px)",
+          "target": "≥ 4.5:1",
+          "text": "워크스페이스 삭제"
+        },
+        {
+          "tier": "must",
+          "id": "TARGET-MIN",
+          "selector": "tr > td > button.icon",
+          "measured": "20×20 px, neighbour within 24 px",
+          "target": "≥ 24×24 px or spaced"
+        },
+        {
+          "tier": "must",
+          "id": "TARGET-MIN",
+          "selector": "tr > td > button.icon",
+          "measured": "20×20 px, neighbour within 24 px",
+          "target": "≥ 24×24 px or spaced"
+        },
+        {
+          "tier": "must",
+          "id": "TARGET-MIN",
+          "selector": "tr > td > button.icon",
+          "measured": "20×20 px, neighbour within 24 px",
+          "target": "≥ 24×24 px or spaced"
+        },
+        {
+          "tier": "must",
+          "id": "TARGET-MIN",
+          "selector": "tr > td > button.icon",
+          "measured": "20×20 px, neighbour within 24 px",
+          "target": "≥ 24×24 px or spaced"
+        },
+        {
+          "tier": "must",
+          "id": "TARGET-MIN",
+          "selector": "tr > td > button.icon",
+          "measured": "20×20 px, neighbour within 24 px",
+          "target": "≥ 24×24 px or spaced"
+        },
+        {
+          "tier": "must",
+          "id": "TARGET-MIN",
+          "selector": "tr > td > button.icon",
+          "measured": "20×20 px, neighbour within 24 px",
+          "target": "≥ 24×24 px or spaced"
+        },
+        {
+          "tier": "should",
+          "id": "KO-WRAP",
+          "selector": "main > h1",
+          "measured": "word-break: normal",
+          "target": "word-break: keep-all + overflow-wrap: break-word",
+          "text": "워크스페이스 설정"
+        },
+        {
+          "tier": "should",
+          "id": "LEADING-BODY",
+          "selector": "main > p.hint",
+          "measured": "line-height 1.4",
+          "target": "≥ 1.5",
+          "text": "변경 사항은 저장 버튼을 눌러야 반영됩니다. 팀원 모두에게 같은 설정이…"
+        },
+        {
+          "tier": "should",
+          "id": "KO-WRAP",
+          "selector": "main > p.hint",
+          "measured": "word-break: normal",
+          "target": "word-break: keep-all + overflow-wrap: break-word",
+          "text": "변경 사항은 저장 버튼을 눌러야 반영됩니다. 팀원 모두에게 같은 설정이…"
+        },
+        {
+          "tier": "should",
+          "id": "LEADING-BODY",
+          "selector": "form > div.box > p.hint",
+          "measured": "line-height 1.4",
+          "target": "≥ 1.5",
+          "text": "이메일은 결제 영수증과 보안 알림을 받는 주소입니다. 바꾸면 새 주소로…"
+        },
+        {
+          "tier": "should",
+          "id": "KO-WRAP",
+          "selector": "form > div.box > p.hint",
+          "measured": "word-break: normal",
+          "target": "word-break: keep-all + overflow-wrap: break-word",
+          "text": "이메일은 결제 영수증과 보안 알림을 받는 주소입니다. 바꾸면 새 주소로…"
+        },
+        {
+          "tier": "should",
+          "id": "KO-WRAP",
+          "selector": "form > div.box > p.hint",
+          "measured": "word-break: normal",
+          "target": "word-break: keep-all + overflow-wrap: break-word",
+          "text": "알림을 받을 채널을 골라요."
+        },
+        {
+          "tier": "should",
+          "id": "LEADING-BODY",
+          "selector": "thead > tr > th",
+          "measured": "line-height 1.4",
+          "target": "≥ 1.5",
+          "text": "기기"
+        },
+        {
+          "tier": "should",
+          "id": "LEADING-BODY",
+          "selector": "thead > tr > th",
+          "measured": "line-height 1.4",
+          "target": "≥ 1.5",
+          "text": "위치"
+        },
+        {
+          "tier": "should",
+          "id": "LEADING-BODY",
+          "selector": "thead > tr > th",
+          "measured": "line-height 1.4",
+          "target": "≥ 1.5",
+          "text": "마지막 접속"
+        },
+        {
+          "tier": "should",
+          "id": "LEADING-BODY",
+          "selector": "thead > tr > th",
+          "measured": "line-height 1.4",
+          "target": "≥ 1.5",
+          "text": "IP"
+        },
+        {
+          "tier": "should",
+          "id": "LEADING-BODY",
+          "selector": "thead > tr > th",
+          "measured": "line-height 1.4",
+          "target": "≥ 1.5",
+          "text": "상태"
+        },
+        {
+          "tier": "should",
+          "id": "LEADING-BODY",
+          "selector": "tbody > tr > td",
+          "measured": "line-height 1.4",
+          "target": "≥ 1.5",
+          "text": "김민서의 맥북 프로 16형 (업무용)"
+        },
+        {
+          "tier": "should",
+          "id": "KO-WRAP",
+          "selector": "tbody > tr > td",
+          "measured": "word-break: normal",
+          "target": "word-break: keep-all + overflow-wrap: break-word",
+          "text": "김민서의 맥북 프로 16형 (업무용)"
+        },
+        {
+          "tier": "should",
+          "id": "LEADING-BODY",
+          "selector": "tbody > tr > td",
+          "measured": "line-height 1.4",
+          "target": "≥ 1.5",
+          "text": "서울 마포구"
+        },
+        {
+          "tier": "should",
+          "id": "LEADING-BODY",
+          "selector": "tbody > tr > td",
+          "measured": "line-height 1.4",
+          "target": "≥ 1.5",
+          "text": "2026. 11. 14. 09:12"
+        },
+        {
+          "tier": "should",
+          "id": "LEADING-BODY",
+          "selector": "tbody > tr > td",
+          "measured": "line-height 1.4",
+          "target": "≥ 1.5",
+          "text": "211.36.142.7"
+        },
+        {
+          "tier": "should",
+          "id": "LEADING-BODY",
+          "selector": "tbody > tr > td",
+          "measured": "line-height 1.4",
+          "target": "≥ 1.5",
+          "text": "이 기기"
+        },
+        {
+          "tier": "should",
+          "id": "TEXT-MIN",
+          "selector": "tr > td > button.icon",
+          "measured": "11 px",
+          "target": "≥ 12 px",
+          "text": "✎"
+        },
+        {
+          "tier": "should",
+          "id": "TEXT-MIN",
+          "selector": "tr > td > button.icon",
+          "measured": "11 px",
+          "target": "≥ 12 px",
+          "text": "✕"
+        },
+        {
+          "tier": "should",
+          "id": "LEADING-BODY",
+          "selector": "tbody > tr > td",
+          "measured": "line-height 1.4",
+          "target": "≥ 1.5",
+          "text": "갤럭시 S25 울트라"
+        },
+        {
+          "tier": "should",
+          "id": "LEADING-BODY",
+          "selector": "tbody > tr > td",
+          "measured": "line-height 1.4",
+          "target": "≥ 1.5",
+          "text": "부산 해운대구"
+        },
+        {
+          "tier": "should",
+          "id": "LEADING-BODY",
+          "selector": "tbody > tr > td",
+          "measured": "line-height 1.4",
+          "target": "≥ 1.5",
+          "text": "2026. 11. 12. 21:40"
+        },
+        {
+          "tier": "should",
+          "id": "LEADING-BODY",
+          "selector": "tbody > tr > td",
+          "measured": "line-height 1.4",
+          "target": "≥ 1.5",
+          "text": "118.235.9.30"
+        },
+        {
+          "tier": "should",
+          "id": "LEADING-BODY",
+          "selector": "tbody > tr > td",
+          "measured": "line-height 1.4",
+          "target": "≥ 1.5",
+          "text": "활성"
+        },
+        {
+          "tier": "should",
+          "id": "TEXT-MIN",
+          "selector": "tr > td > button.icon",
+          "measured": "11 px",
+          "target": "≥ 12 px",
+          "text": "✎"
+        },
+        {
+          "tier": "should",
+          "id": "TEXT-MIN",
+          "selector": "tr > td > button.icon",
+          "measured": "11 px",
+          "target": "≥ 12 px",
+          "text": "✕"
+        },
+        {
+          "tier": "should",
+          "id": "LEADING-BODY",
+          "selector": "tbody > tr > td",
+          "measured": "line-height 1.4",
+          "target": "≥ 1.5",
+          "text": "아이패드 에어"
+        },
+        {
+          "tier": "should",
+          "id": "LEADING-BODY",
+          "selector": "tbody > tr > td",
+          "measured": "line-height 1.4",
+          "target": "≥ 1.5",
+          "text": "제주 제주시"
+        },
+        {
+          "tier": "should",
+          "id": "LEADING-BODY",
+          "selector": "tbody > tr > td",
+          "measured": "line-height 1.4",
+          "target": "≥ 1.5",
+          "text": "2026. 10. 30. 07:05"
+        },
+        {
+          "tier": "should",
+          "id": "LEADING-BODY",
+          "selector": "tbody > tr > td",
+          "measured": "line-height 1.4",
+          "target": "≥ 1.5",
+          "text": "175.223.10.4"
+        },
+        {
+          "tier": "should",
+          "id": "LEADING-BODY",
+          "selector": "tbody > tr > td",
+          "measured": "line-height 1.4",
+          "target": "≥ 1.5",
+          "text": "90일 미사용"
+        },
+        {
+          "tier": "should",
+          "id": "TEXT-MIN",
+          "selector": "tr > td > button.icon",
+          "measured": "11 px",
+          "target": "≥ 12 px",
+          "text": "✎"
+        },
+        {
+          "tier": "should",
+          "id": "TEXT-MIN",
+          "selector": "tr > td > button.icon",
+          "measured": "11 px",
+          "target": "≥ 12 px",
+          "text": "✕"
+        },
+        {
+          "tier": "should",
+          "id": "LEADING-BODY",
+          "selector": "form > div.box > p.hint",
+          "measured": "line-height 1.4",
+          "target": "≥ 1.5",
+          "text": "모르는 기기가 있다면 바로 연결을 해제하십시오."
+        },
+        {
+          "tier": "should",
+          "id": "KO-WRAP",
+          "selector": "form > div.box > p.hint",
+          "measured": "word-break: normal",
+          "target": "word-break: keep-all + overflow-wrap: break-word",
+          "text": "모르는 기기가 있다면 바로 연결을 해제하십시오."
+        },
+        {
+          "tier": "should",
+          "id": "LEADING-BODY",
+          "selector": "main > form > button.save",
+          "measured": "line-height 1.2",
+          "target": "≥ 1.5",
+          "text": "변경 사항 저장"
+        },
+        {
+          "tier": "should",
+          "id": "LEADING-BODY",
+          "selector": "main > div.box > p",
+          "measured": "line-height 1.4",
+          "target": "≥ 1.5",
+          "text": "워크스페이스를 삭제하면 문서 1,284개와 결제 내역이 모두 사라지고 …"
+        },
+        {
+          "tier": "should",
+          "id": "KO-WRAP",
+          "selector": "main > div.box > p",
+          "measured": "word-break: normal",
+          "target": "word-break: keep-all + overflow-wrap: break-word",
+          "text": "워크스페이스를 삭제하면 문서 1,284개와 결제 내역이 모두 사라지고 …"
+        },
+        {
+          "tier": "should",
+          "id": "LEADING-BODY",
+          "selector": "main > div.box > button.danger",
+          "measured": "line-height 1.2",
+          "target": "≥ 1.5",
+          "text": "워크스페이스 삭제"
+        },
+        {
+          "tier": "should",
+          "id": "KO-WRAP",
+          "selector": "main > div.box > button.danger",
+          "measured": "word-break: normal",
+          "target": "word-break: keep-all + overflow-wrap: break-word",
+          "text": "워크스페이스 삭제"
+        },
+        {
+          "tier": "should",
+          "id": "KO-REGISTER-MIX",
+          "selector": "main > p.hint",
+          "measured": "해요체 ×3, 합니다체 ×4; e.g. \"팀원 모두에게 같은 설정이 적용돼요\"",
+          "target": "one register (mostly 합니다)"
+        },
+        {
+          "tier": "polish",
+          "id": "KO-TRACKING",
+          "selector": "main > h1",
+          "measured": "letter-spacing 1.04px",
+          "target": "≤ 0 on Hangul",
+          "text": "워크스페이스 설정"
+        },
+        {
+          "tier": "polish",
+          "id": "KO-TRACKING",
+          "selector": "main > form > h2",
+          "measured": "letter-spacing 0.51px",
+          "target": "≤ 0 on Hangul",
+          "text": "워크스페이스"
+        },
+        {
+          "tier": "polish",
+          "id": "KO-TRACKING",
+          "selector": "main > form > h2",
+          "measured": "letter-spacing 0.51px",
+          "target": "≤ 0 on Hangul",
+          "text": "알림"
+        },
+        {
+          "tier": "polish",
+          "id": "KO-TRACKING",
+          "selector": "main > form > h2",
+          "measured": "letter-spacing 0.51px",
+          "target": "≤ 0 on Hangul",
+          "text": "연결된 기기"
+        },
+        {
+          "tier": "polish",
+          "id": "KO-TRACKING",
+          "selector": "main > h2",
+          "measured": "letter-spacing 0.51px",
+          "target": "≤ 0 on Hangul",
+          "text": "위험 구역"
+        },
+        {
+          "tier": "polish",
+          "id": "SCALE-OFF",
+          "selector": "div.top",
+          "measured": "14 px (paddingTop)",
+          "target": "multiple of 4 px"
+        },
+        {
+          "tier": "polish",
+          "id": "SCALE-OFF",
+          "selector": "div.top",
+          "measured": "22 px (paddingRight)",
+          "target": "multiple of 4 px"
+        },
+        {
+          "tier": "polish",
+          "id": "SCALE-OFF",
+          "selector": "div.top",
+          "measured": "18 px (rowGap)",
+          "target": "multiple of 4 px"
+        },
+        {
+          "tier": "polish",
+          "id": "SCALE-OFF",
+          "selector": "main > h1",
+          "measured": "6 px (marginBottom)",
+          "target": "multiple of 4 px"
+        },
+        {
+          "tier": "polish",
+          "id": "SCALE-OFF",
+          "selector": "main > p.hint",
+          "measured": "13 px (marginTop)",
+          "target": "multiple of 4 px"
+        },
+        {
+          "tier": "polish",
+          "id": "SCALE-OFF",
+          "selector": "main > form > h2",
+          "measured": "30 px (marginTop)",
+          "target": "multiple of 4 px"
+        },
+        {
+          "tier": "polish",
+          "id": "SCALE-OFF",
+          "selector": "main > form > h2",
+          "measured": "10 px (marginBottom)",
+          "target": "multiple of 4 px"
+        },
+        {
+          "tier": "polish",
+          "id": "SCALE-OFF",
+          "selector": "form > div.box > input",
+          "measured": "5 px (marginTop)",
+          "target": "multiple of 4 px"
+        },
+        {
+          "tier": "polish",
+          "id": "SCALE-OFF",
+          "selector": "form > div.box > input",
+          "measured": "7 px (paddingTop)",
+          "target": "multiple of 4 px"
+        },
+        {
+          "tier": "polish",
+          "id": "SCALE-OFF",
+          "selector": "form > div.box > input",
+          "measured": "9 px (paddingRight)",
+          "target": "multiple of 4 px"
+        }
+      ]
+    },
+    {
+      "key": "settings@desktop",
+      "file": "settings@desktop.png",
+      "url": "http://127.0.0.1:57664/before.html",
+      "viewport": {
+        "name": "desktop",
+        "width": 1280,
+        "height": 800
+      },
+      "scheme": "light",
+      "counts": {
+        "must": 17,
+        "should": 37,
+        "polish": 15,
+        "info": 0,
+        "waived": 0
+      },
+      "findings": [
+        {
+          "tier": "must",
+          "id": "CONTRAST-TEXT",
+          "selector": "main > p.hint",
+          "measured": "2.73:1 (#999999 on #fafafa, 13 px)",
+          "target": "≥ 4.5:1",
+          "text": "변경 사항은 저장 버튼을 눌러야 반영됩니다. 팀원 모두에게 같은 설정이…"
+        },
+        {
+          "tier": "must",
+          "id": "CONTRAST-TEXT",
+          "selector": "form > div.box > p.hint",
+          "measured": "2.85:1 (#999999 on #ffffff, 13 px)",
+          "target": "≥ 4.5:1",
+          "text": "이메일은 결제 영수증과 보안 알림을 받는 주소입니다. 바꾸면 새 주소로…"
+        },
+        {
+          "tier": "must",
+          "id": "CONTRAST-TEXT",
+          "selector": "form > div.box > p.hint",
+          "measured": "2.85:1 (#999999 on #ffffff, 13 px)",
+          "target": "≥ 4.5:1",
+          "text": "알림을 받을 채널을 골라요."
+        },
+        {
+          "tier": "must",
+          "id": "CONTRAST-TEXT",
+          "selector": "thead > tr > th",
+          "measured": "2.85:1 (#999999 on #ffffff, 14 px)",
+          "target": "≥ 4.5:1",
+          "text": "기기"
+        },
+        {
+          "tier": "must",
+          "id": "CONTRAST-TEXT",
+          "selector": "thead > tr > th",
+          "measured": "2.85:1 (#999999 on #ffffff, 14 px)",
+          "target": "≥ 4.5:1",
+          "text": "위치"
+        },
+        {
+          "tier": "must",
+          "id": "CONTRAST-TEXT",
+          "selector": "thead > tr > th",
+          "measured": "2.85:1 (#999999 on #ffffff, 14 px)",
+          "target": "≥ 4.5:1",
+          "text": "마지막 접속"
+        },
+        {
+          "tier": "must",
+          "id": "CONTRAST-TEXT",
+          "selector": "thead > tr > th",
+          "measured": "2.85:1 (#999999 on #ffffff, 14 px)",
+          "target": "≥ 4.5:1",
+          "text": "IP"
+        },
+        {
+          "tier": "must",
+          "id": "CONTRAST-TEXT",
+          "selector": "thead > tr > th",
+          "measured": "2.85:1 (#999999 on #ffffff, 14 px)",
+          "target": "≥ 4.5:1",
+          "text": "상태"
+        },
+        {
+          "tier": "must",
+          "id": "CONTRAST-TEXT",
+          "selector": "form > div.box > p.hint",
+          "measured": "2.85:1 (#999999 on #ffffff, 13 px)",
+          "target": "≥ 4.5:1",
+          "text": "모르는 기기가 있다면 바로 연결을 해제하십시오."
+        },
+        {
+          "tier": "must",
+          "id": "CONTRAST-TEXT",
+          "selector": "main > form > button.save",
+          "measured": "3.73:1 (#ffffff on #3d7eff, 14 px)",
+          "target": "≥ 4.5:1",
+          "text": "변경 사항 저장"
+        },
+        {
+          "tier": "must",
+          "id": "CONTRAST-TEXT",
+          "selector": "main > div.box > button.danger",
+          "measured": "3.91:1 (#e5484d on #ffffff, 13.33 px)",
+          "target": "≥ 4.5:1",
+          "text": "워크스페이스 삭제"
+        },
+        {
+          "tier": "must",
+          "id": "TARGET-MIN",
+          "selector": "tr > td > button.icon",
+          "measured": "20×20 px, neighbour within 24 px",
+          "target": "≥ 24×24 px or spaced"
+        },
+        {
+          "tier": "must",
+          "id": "TARGET-MIN",
+          "selector": "tr > td > button.icon",
+          "measured": "20×20 px, neighbour within 24 px",
+          "target": "≥ 24×24 px or spaced"
+        },
+        {
+          "tier": "must",
+          "id": "TARGET-MIN",
+          "selector": "tr > td > button.icon",
+          "measured": "20×20 px, neighbour within 24 px",
+          "target": "≥ 24×24 px or spaced"
+        },
+        {
+          "tier": "must",
+          "id": "TARGET-MIN",
+          "selector": "tr > td > button.icon",
+          "measured": "20×20 px, neighbour within 24 px",
+          "target": "≥ 24×24 px or spaced"
+        },
+        {
+          "tier": "must",
+          "id": "TARGET-MIN",
+          "selector": "tr > td > button.icon",
+          "measured": "20×20 px, neighbour within 24 px",
+          "target": "≥ 24×24 px or spaced"
+        },
+        {
+          "tier": "must",
+          "id": "TARGET-MIN",
+          "selector": "tr > td > button.icon",
+          "measured": "20×20 px, neighbour within 24 px",
+          "target": "≥ 24×24 px or spaced"
+        },
+        {
+          "tier": "should",
+          "id": "KO-WRAP",
+          "selector": "main > h1",
+          "measured": "word-break: normal",
+          "target": "word-break: keep-all + overflow-wrap: break-word",
+          "text": "워크스페이스 설정"
+        },
+        {
+          "tier": "should",
+          "id": "KO-WRAP",
+          "selector": "main > p.hint",
+          "measured": "word-break: normal",
+          "target": "word-break: keep-all + overflow-wrap: break-word",
+          "text": "변경 사항은 저장 버튼을 눌러야 반영됩니다. 팀원 모두에게 같은 설정이…"
+        },
+        {
+          "tier": "should",
+          "id": "KO-WRAP",
+          "selector": "form > div.box > p.hint",
+          "measured": "word-break: normal",
+          "target": "word-break: keep-all + overflow-wrap: break-word",
+          "text": "이메일은 결제 영수증과 보안 알림을 받는 주소입니다. 바꾸면 새 주소로…"
+        },
+        {
+          "tier": "should",
+          "id": "KO-WRAP",
+          "selector": "form > div.box > p.hint",
+          "measured": "word-break: normal",
+          "target": "word-break: keep-all + overflow-wrap: break-word",
+          "text": "알림을 받을 채널을 골라요."
+        },
+        {
+          "tier": "should",
+          "id": "LEADING-BODY",
+          "selector": "thead > tr > th",
+          "measured": "line-height 1.4",
+          "target": "≥ 1.5",
+          "text": "기기"
+        },
+        {
+          "tier": "should",
+          "id": "LEADING-BODY",
+          "selector": "thead > tr > th",
+          "measured": "line-height 1.4",
+          "target": "≥ 1.5",
+          "text": "위치"
+        },
+        {
+          "tier": "should",
+          "id": "LEADING-BODY",
+          "selector": "thead > tr > th",
+          "measured": "line-height 1.4",
+          "target": "≥ 1.5",
+          "text": "마지막 접속"
+        },
+        {
+          "tier": "should",
+          "id": "LEADING-BODY",
+          "selector": "thead > tr > th",
+          "measured": "line-height 1.4",
+          "target": "≥ 1.5",
+          "text": "IP"
+        },
+        {
+          "tier": "should",
+          "id": "LEADING-BODY",
+          "selector": "thead > tr > th",
+          "measured": "line-height 1.4",
+          "target": "≥ 1.5",
+          "text": "상태"
+        },
+        {
+          "tier": "should",
+          "id": "LEADING-BODY",
+          "selector": "tbody > tr > td",
+          "measured": "line-height 1.4",
+          "target": "≥ 1.5",
+          "text": "김민서의 맥북 프로 16형 (업무용)"
+        },
+        {
+          "tier": "should",
+          "id": "KO-WRAP",
+          "selector": "tbody > tr > td",
+          "measured": "word-break: normal",
+          "target": "word-break: keep-all + overflow-wrap: break-word",
+          "text": "김민서의 맥북 프로 16형 (업무용)"
+        },
+        {
+          "tier": "should",
+          "id": "LEADING-BODY",
+          "selector": "tbody > tr > td",
+          "measured": "line-height 1.4",
+          "target": "≥ 1.5",
+          "text": "서울 마포구"
+        },
+        {
+          "tier": "should",
+          "id": "LEADING-BODY",
+          "selector": "tbody > tr > td",
+          "measured": "line-height 1.4",
+          "target": "≥ 1.5",
+          "text": "2026. 11. 14. 09:12"
+        },
+        {
+          "tier": "should",
+          "id": "LEADING-BODY",
+          "selector": "tbody > tr > td",
+          "measured": "line-height 1.4",
+          "target": "≥ 1.5",
+          "text": "211.36.142.7"
+        },
+        {
+          "tier": "should",
+          "id": "LEADING-BODY",
+          "selector": "tbody > tr > td",
+          "measured": "line-height 1.4",
+          "target": "≥ 1.5",
+          "text": "이 기기"
+        },
+        {
+          "tier": "should",
+          "id": "TEXT-MIN",
+          "selector": "tr > td > button.icon",
+          "measured": "11 px",
+          "target": "≥ 12 px",
+          "text": "✎"
+        },
+        {
+          "tier": "should",
+          "id": "TEXT-MIN",
+          "selector": "tr > td > button.icon",
+          "measured": "11 px",
+          "target": "≥ 12 px",
+          "text": "✕"
+        },
+        {
+          "tier": "should",
+          "id": "LEADING-BODY",
+          "selector": "tbody > tr > td",
+          "measured": "line-height 1.4",
+          "target": "≥ 1.5",
+          "text": "갤럭시 S25 울트라"
+        },
+        {
+          "tier": "should",
+          "id": "LEADING-BODY",
+          "selector": "tbody > tr > td",
+          "measured": "line-height 1.4",
+          "target": "≥ 1.5",
+          "text": "부산 해운대구"
+        },
+        {
+          "tier": "should",
+          "id": "LEADING-BODY",
+          "selector": "tbody > tr > td",
+          "measured": "line-height 1.4",
+          "target": "≥ 1.5",
+          "text": "2026. 11. 12. 21:40"
+        },
+        {
+          "tier": "should",
+          "id": "LEADING-BODY",
+          "selector": "tbody > tr > td",
+          "measured": "line-height 1.4",
+          "target": "≥ 1.5",
+          "text": "118.235.9.30"
+        },
+        {
+          "tier": "should",
+          "id": "LEADING-BODY",
+          "selector": "tbody > tr > td",
+          "measured": "line-height 1.4",
+          "target": "≥ 1.5",
+          "text": "활성"
+        },
+        {
+          "tier": "should",
+          "id": "TEXT-MIN",
+          "selector": "tr > td > button.icon",
+          "measured": "11 px",
+          "target": "≥ 12 px",
+          "text": "✎"
+        },
+        {
+          "tier": "should",
+          "id": "TEXT-MIN",
+          "selector": "tr > td > button.icon",
+          "measured": "11 px",
+          "target": "≥ 12 px",
+          "text": "✕"
+        },
+        {
+          "tier": "should",
+          "id": "LEADING-BODY",
+          "selector": "tbody > tr > td",
+          "measured": "line-height 1.4",
+          "target": "≥ 1.5",
+          "text": "아이패드 에어"
+        },
+        {
+          "tier": "should",
+          "id": "LEADING-BODY",
+          "selector": "tbody > tr > td",
+          "measured": "line-height 1.4",
+          "target": "≥ 1.5",
+          "text": "제주 제주시"
+        },
+        {
+          "tier": "should",
+          "id": "LEADING-BODY",
+          "selector": "tbody > tr > td",
+          "measured": "line-height 1.4",
+          "target": "≥ 1.5",
+          "text": "2026. 10. 30. 07:05"
+        },
+        {
+          "tier": "should",
+          "id": "LEADING-BODY",
+          "selector": "tbody > tr > td",
+          "measured": "line-height 1.4",
+          "target": "≥ 1.5",
+          "text": "175.223.10.4"
+        },
+        {
+          "tier": "should",
+          "id": "LEADING-BODY",
+          "selector": "tbody > tr > td",
+          "measured": "line-height 1.4",
+          "target": "≥ 1.5",
+          "text": "90일 미사용"
+        },
+        {
+          "tier": "should",
+          "id": "TEXT-MIN",
+          "selector": "tr > td > button.icon",
+          "measured": "11 px",
+          "target": "≥ 12 px",
+          "text": "✎"
+        },
+        {
+          "tier": "should",
+          "id": "TEXT-MIN",
+          "selector": "tr > td > button.icon",
+          "measured": "11 px",
+          "target": "≥ 12 px",
+          "text": "✕"
+        },
+        {
+          "tier": "should",
+          "id": "KO-WRAP",
+          "selector": "form > div.box > p.hint",
+          "measured": "word-break: normal",
+          "target": "word-break: keep-all + overflow-wrap: break-word",
+          "text": "모르는 기기가 있다면 바로 연결을 해제하십시오."
+        },
+        {
+          "tier": "should",
+          "id": "LEADING-BODY",
+          "selector": "main > form > button.save",
+          "measured": "line-height 1.2",
+          "target": "≥ 1.5",
+          "text": "변경 사항 저장"
+        },
+        {
+          "tier": "should",
+          "id": "KO-WRAP",
+          "selector": "main > div.box > p",
+          "measured": "word-break: normal",
+          "target": "word-break: keep-all + overflow-wrap: break-word",
+          "text": "워크스페이스를 삭제하면 문서 1,284개와 결제 내역이 모두 사라지고 …"
+        },
+        {
+          "tier": "should",
+          "id": "LEADING-BODY",
+          "selector": "main > div.box > button.danger",
+          "measured": "line-height 1.2",
+          "target": "≥ 1.5",
+          "text": "워크스페이스 삭제"
+        },
+        {
+          "tier": "should",
+          "id": "KO-WRAP",
+          "selector": "main > div.box > button.danger",
+          "measured": "word-break: normal",
+          "target": "word-break: keep-all + overflow-wrap: break-word",
+          "text": "워크스페이스 삭제"
+        },
+        {
+          "tier": "should",
+          "id": "KO-REGISTER-MIX",
+          "selector": "main > p.hint",
+          "measured": "해요체 ×3, 합니다체 ×4; e.g. \"팀원 모두에게 같은 설정이 적용돼요\"",
+          "target": "one register (mostly 합니다)"
+        },
+        {
+          "tier": "polish",
+          "id": "KO-TRACKING",
+          "selector": "main > h1",
+          "measured": "letter-spacing 1.04px",
+          "target": "≤ 0 on Hangul",
+          "text": "워크스페이스 설정"
+        },
+        {
+          "tier": "polish",
+          "id": "KO-TRACKING",
+          "selector": "main > form > h2",
+          "measured": "letter-spacing 0.51px",
+          "target": "≤ 0 on Hangul",
+          "text": "워크스페이스"
+        },
+        {
+          "tier": "polish",
+          "id": "KO-TRACKING",
+          "selector": "main > form > h2",
+          "measured": "letter-spacing 0.51px",
+          "target": "≤ 0 on Hangul",
+          "text": "알림"
+        },
+        {
+          "tier": "polish",
+          "id": "KO-TRACKING",
+          "selector": "main > form > h2",
+          "measured": "letter-spacing 0.51px",
+          "target": "≤ 0 on Hangul",
+          "text": "연결된 기기"
+        },
+        {
+          "tier": "polish",
+          "id": "KO-TRACKING",
+          "selector": "main > h2",
+          "measured": "letter-spacing 0.51px",
+          "target": "≤ 0 on Hangul",
+          "text": "위험 구역"
+        },
+        {
+          "tier": "polish",
+          "id": "SCALE-OFF",
+          "selector": "div.top",
+          "measured": "14 px (paddingTop)",
+          "target": "multiple of 4 px"
+        },
+        {
+          "tier": "polish",
+          "id": "SCALE-OFF",
+          "selector": "div.top",
+          "measured": "22 px (paddingRight)",
+          "target": "multiple of 4 px"
+        },
+        {
+          "tier": "polish",
+          "id": "SCALE-OFF",
+          "selector": "div.top",
+          "measured": "18 px (rowGap)",
+          "target": "multiple of 4 px"
+        },
+        {
+          "tier": "polish",
+          "id": "SCALE-OFF",
+          "selector": "main > h1",
+          "measured": "6 px (marginBottom)",
+          "target": "multiple of 4 px"
+        },
+        {
+          "tier": "polish",
+          "id": "SCALE-OFF",
+          "selector": "main > p.hint",
+          "measured": "13 px (marginTop)",
+          "target": "multiple of 4 px"
+        },
+        {
+          "tier": "polish",
+          "id": "SCALE-OFF",
+          "selector": "main > form > h2",
+          "measured": "30 px (marginTop)",
+          "target": "multiple of 4 px"
+        },
+        {
+          "tier": "polish",
+          "id": "SCALE-OFF",
+          "selector": "main > form > h2",
+          "measured": "10 px (marginBottom)",
+          "target": "multiple of 4 px"
+        },
+        {
+          "tier": "polish",
+          "id": "SCALE-OFF",
+          "selector": "form > div.box > input",
+          "measured": "5 px (marginTop)",
+          "target": "multiple of 4 px"
+        },
+        {
+          "tier": "polish",
+          "id": "SCALE-OFF",
+          "selector": "form > div.box > input",
+          "measured": "7 px (paddingTop)",
+          "target": "multiple of 4 px"
+        },
+        {
+          "tier": "polish",
+          "id": "SCALE-OFF",
+          "selector": "form > div.box > input",
+          "measured": "9 px (paddingRight)",
+          "target": "multiple of 4 px"
+        }
+      ]
+    }
+  ]
+}
