@@ -12,6 +12,11 @@ An 8 base (M3 "8dp scale") plus a 4 half-step for dense UI. Every gap and paddin
 - Less space inside a group than between; same function, same look (Laws of UX). Label-field 4-8, field-field 16, section 32-48 (house default).
 - Start with too much space, then remove; no gap may read as belonging to both sides (Refactoring UI).
 
+## Alignment by screen type
+- Single-action short screens (sign-in, sign-up, verify, one-step confirmation, success, empty): centre one narrow column; labels and fields stay left-aligned inside it.
+- Reading and scanning screens (docs, lists, articles, settings, dashboards): align left to the page grid.
+- Don't move a centred single-action screen left "for consistency"; the screen's type decides, not its neighbours (house default).
+
 ## Breakpoints
 - M3 window classes (dp): compact <600 · medium 600-839 · expanded 840-1199 · large 1200-1599 · extra-large 1600+.
 - KRDS: 360 / 768 / 1024 / 1280 / 1440; content max 1200 px, side padding 24 px (16 px mobile).
@@ -58,3 +63,4 @@ Capture names the culprits; check reflow too.
 - Refactoring UI: https://www.refactoringui.com
 - WCAG 2.2, 1.4.4, 1.4.10, 2.4.11: https://www.w3.org/TR/WCAG22/
 - House default: gap sizes, container queries, recompose moves, safe areas, overflow fixes.
+- House default, alignment by screen type: scanning needs a fixed left edge, a lone action does not.

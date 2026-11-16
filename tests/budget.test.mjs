@@ -13,13 +13,13 @@ const docs = files.filter((f) => /\.(md|json)$/.test(f));
 const rel = (f) => relative(SKILL, f);
 const size = (f) => statSync(f).size;
 
-// Per-file caps from the build spec (KB).
+// Per-file caps from the build spec (KB); 0.1.1 raised existing, type and layout for the restyle identity rules.
 const CAPS = {
   'SKILL.md': 11.5,
-  'playbooks/create.md': 4, 'playbooks/existing.md': 3.5, 'playbooks/port.md': 2.5,
+  'playbooks/create.md': 4, 'playbooks/existing.md': 4.5, 'playbooks/port.md': 2.5,
   'playbooks/system.md': 3.5, 'playbooks/rounds.md': 3, 'playbooks/review.md': 4,
-  'library/foundations/type.md': 3, 'library/foundations/color.md': 3,
-  'library/foundations/layout.md': 3, 'library/foundations/motion.md': 3,
+  'library/foundations/type.md': 3.5, 'library/foundations/color.md': 3,
+  'library/foundations/layout.md': 3.5, 'library/foundations/motion.md': 3,
   'library/patterns/states.md': 3, 'library/patterns/forms-dialogs.md': 3.5,
   'library/patterns/workspaces.md': 3, 'library/patterns/components.md': 4,
   'library/patterns/pages.md': 2.5, 'library/patterns/effects.md': 3, 'library/patterns/game-scenes.md': 2.5,

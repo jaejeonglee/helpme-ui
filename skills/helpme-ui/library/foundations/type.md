@@ -6,6 +6,7 @@ Use when choosing fonts, sizes, weights or number styles, or when text looks fla
 - One family; add a second only for a separate job (code, IDs). `FONT-COUNT` flags more than two (house default).
 - Korean UI: a Hangul-capable family first, see [Hangul type](../korean/hangul-type.md).
 - UI weights 400, 500/600, 700. Skip Ultralight, Thin and Light for UI text (Apple HIG).
+- Restyle: headings keep the product's shipped display face; adjust size, weight and spacing only. Changing the face is the user's decision, kept as a `lock:` ([existing](../../playbooks/existing.md#identity-first)) (house default).
 
 ## Weight and color before size
 - Quiet secondary text (muted color, 400) before enlarging the heading (Refactoring UI).
@@ -53,3 +54,4 @@ body { font-family: "UI", "UI Fallback", system-ui, sans-serif; }
 - Vercel Web Interface Guidelines: https://vercel.com/design/guidelines
 - WCAG 2.2, 1.4.8 Visual Presentation: https://www.w3.org/TR/WCAG22/
 - House default: family count, sizes per screen, heading line height, font loading.
+- House default, restyle heading face: it is the type users recognise the product by.

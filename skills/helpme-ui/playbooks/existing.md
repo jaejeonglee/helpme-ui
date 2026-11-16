@@ -21,6 +21,20 @@ node $S/scripts/capture.mjs http://localhost:5173/settings --name settings --out
 ```
 r0 keeps PNGs, audit.json and wiring.json (links, forms, fields, buttons, headings, aria, handlers). Every later round compares with it.
 
+## Identity first
+Restyle only, at the Look step. The may-change column stops at what makes the product recognisable: list it from r0 (`census.json` has the families and colours in use) and write each as a `lock:` line in the ledger before the plan.
+```
+lock: h1–h3 · font-family = "Brand Display" — shipped heading face
+lock: brand · color = #2f6bff — shipped brand colour
+lock: inner pages · background = #ffffff — shipped
+lock: sign-in · layout = centred narrow column — shipped
+```
+- Lock the display/heading face, the brand and background colours, and the alignment of key screens.
+- Default is keep. A lock changes only when the user asks or a must fails (`CONTRAST-TEXT` on the brand colour → adjust that shade only). Fix what was measured; leave the rest.
+- "Consistency with another page" is not a reason to change a lock.
+- A change the user can't see (a near-identical off-white, 600 vs 700) costs trust and buys nothing. Leave it.
+- Before hand-off, compare the after shots with r0 lock by lock; an unasked change goes back.
+
 ## Conflict rows
 Sources disagree → a row in plan.md, never a silent pick:
 ```
@@ -62,3 +76,4 @@ Proof gate as in [create](create.md): phone + desktop (+ dark), 0 must, shoulds 
 - idea: redesign records links, fields, handlers, headings and fails on loss — Nutlope/hallmark
 - idea: worst-case data to break a screen — emilkowalski/skills break-ui
 - house default: may-change/must-keep table, conflict rows, hook repro, two exemplars
+- house default: identity locks in a restyle — unasked changes to what users already recognise cost more trust than they earn

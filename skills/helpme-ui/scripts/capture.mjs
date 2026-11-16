@@ -220,7 +220,7 @@ export async function run(argv, { cwd = process.cwd(), log = console.log, err = 
   }
 
   const total = Object.fromEntries(['must', 'should', 'polish', 'info', 'waived'].map((k) => [k, shots.reduce((n, s) => n + s.counts[k], 0)]));
-  const audit = { tool: 'helpme-ui capture', version: '0.1.0', created: new Date().toISOString(), failOn: o.failOn,
+  const audit = { tool: 'helpme-ui capture', version: '0.1.1', created: new Date().toISOString(), failOn: o.failOn,
     stress: o.stress, reducedMotion: o.reducedMotion, total, shots };
   writeFileSync(join(outDir, 'audit.json'), JSON.stringify(audit, null, 2));
   writeFileSync(join(outDir, 'wiring.json'), JSON.stringify(wiring, null, 2));

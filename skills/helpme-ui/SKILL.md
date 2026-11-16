@@ -4,7 +4,7 @@ description: "Designs, fixes and reviews user interfaces, then proves the result
 license: MIT
 compatibility: "Node.js 20+ for scripts; Playwright optional for screenshots. No network calls besides captured pages."
 metadata:
-  version: "0.1.0"
+  version: "0.1.1"
 ---
 
 # helpme-ui
@@ -29,6 +29,8 @@ Pick by the signal. Two fit → take the smaller one and say so.
 | system | DESIGN.md, tokens, a set of pages | tokens OK | [system](playbooks/system.md) |
 | round | user reacts to built work ("좀 답답해요") | nothing | [rounds](playbooks/rounds.md) |
 | component | one control, card or row | nothing | [components](library/patterns/components.md) |
+
+Restyle locks what the product already is (heading face, brand and background colours, key-screen alignment) before planning: [Identity first](playbooks/existing.md#identity-first).
 
 ## Loop
 

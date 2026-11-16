@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.1.1 — 2026-11-16
+
+A restyle keeps what the product already is.
+
+- `playbooks/existing.md`: new "Identity first" section. At Look, the shipped heading face, brand and background colours and key-screen alignment become `lock:` lines. A lock changes only when the user asks or a must fails; "consistency with another page" is no reason; changes the user can't see are left alone; locks are checked against r0 before hand-off.
+- `library/foundations/type.md`: in a restyle, headings keep the shipped display face; size, weight and spacing only.
+- `library/foundations/layout.md`: alignment by screen type. Single-action short screens centre a narrow column; reading and scanning screens align left.
+- `SKILL.md`: restyle points to Identity first; version 0.1.1 (also in `capture.mjs` audit output).
+- Tests: per-file caps raised for `existing.md` (4.5 KB), `type.md` and `layout.md` (3.5 KB).
+
 ## 0.1.0 — 2026-11-14
 
 First release.
